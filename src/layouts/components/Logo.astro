@@ -55,7 +55,10 @@ const { theme_switcher }: { theme_switcher: boolean } = config.settings;
         )}
       </>
     ) : logo_text ? (
-      logo_text
+      <p
+        class="font-secondary text-center font-normal bg-border uppercase text-xl/4 pt-4 pb-6 px-6 text-light dark:text-white hover:scale-105 ease-in-out duration-300"
+        set:html={logo_text}
+      />
     ) : (
       title
     )

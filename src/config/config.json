@@ -5,11 +5,11 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "logo": "",
+    "logo_darkmode": "",
     "logo_width": "150",
     "logo_height": "30",
-    "logo_text": "Astroplate"
+    "logo_text": "<span class=\"text-base\">THE</span><br/><span class=\"font-bold\">AVIATION</span><br/><span class=\"tracking-normal leading-6\">BUSINESS</span><br/><span class=\"font-bold text-primary\">PODCAST</span>"
   },
 
   "settings": {
