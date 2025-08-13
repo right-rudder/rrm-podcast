@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "The Aviation Business Podcast",
-    "base_url": "podcast.rightruddermarketing.com",
+    "base_url": "https://rrm-podcast.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
