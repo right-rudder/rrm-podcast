@@ -2,7 +2,7 @@
 title: "About The Aviation Business Podcast"
 meta_title: "About"
 description: "Learn about The Aviation Business Podcast and Right Rudder Marketing's mission to connect aviation industry leaders and share their stories."
-image: "/images/avatar.png"
+image: "/images/AviationBusinessPodcast Logo.png"
 draft: false
 ---
 

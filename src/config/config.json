@@ -4,7 +4,7 @@
     "base_url": "https://rrm-podcast.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/The-Aviation-Business-Podcasts-Favicon.png",
     "logo": "",
     "logo_darkmode": "",
     "logo_width": "150",
@@ -39,7 +39,7 @@
   },
 
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "aviation-business-podcast",
     "settings": {}
   },

@@ -3,7 +3,7 @@
 banner:
   title: "The Aviation Business Podcast - Where Aviation Leaders Share Their Stories"
   content: "Join us for in-depth conversations with aviation industry leaders, entrepreneurs, and innovators. Discover the strategies, challenges, and opportunities that drive success in the aviation business world."
-  image: "/images/banner.png"
+  image: ""
   button:
     enable: true
     label: "Listen Now"
@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "What You'll Discover on The Aviation Business Podcast"
-    image: "/images/service-1.png"
+    image: "/images/The Aviation Business Podcast.png"
     content: "Our podcast brings you exclusive insights from aviation industry leaders, covering everything from airline operations to aerospace innovation. Here's what makes our show essential listening:"
     bulletpoints:
       - "Expert interviews with aviation CEOs, pilots, and industry innovators"
