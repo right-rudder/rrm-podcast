@@ -8,6 +8,8 @@ const episodesCollection = defineCollection({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
+    season: z.number().optional(),
+    episode: z.number().optional(),
     date: z.date().optional(),
     image: z.string().optional(),
     author: z.string().default("Admin"),

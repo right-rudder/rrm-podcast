@@ -8,6 +8,17 @@ export const sortByDate = (array: any[]) => {
   return sortedArray;
 };
 
+// sort by season and episode
+export const sortBySeasonAndEpisode = (array: any[]) => {
+  const sortedArray = array.sort((a: any, b: any) => {
+    if (a.data.season === b.data.season) {
+      return b.data.episode - a.data.episode;
+    }
+    return b.data.season - a.data.season;
+  });
+  return sortedArray;
+};
+
 // sort product by weight
 export const sortByWeight = (array: any[]) => {
   const withWeight = array.filter(
