@@ -17,9 +17,9 @@ const blogCollection = defineCollection({
   }),
 });
 
-// Author collection schema
-const authorsCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/authors" }),
+// Guest collection schema
+const guestsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/guests" }),
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
@@ -152,7 +152,7 @@ export const collections = {
   // Pages
   homepage: homepageCollection,
   blog: blogCollection,
-  authors: authorsCollection,
+  guests: guestsCollection,
   pages: pagesCollection,
   about: aboutCollection,
   contact: contactCollection,

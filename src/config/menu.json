@@ -14,7 +14,7 @@
     },
     {
       "name": "Guests",
-      "url": "/authors"
+      "url": "/guests"
     }
   ],
   "footer": [
@@ -28,7 +28,7 @@
     },
     {
       "name": "Guests",
-      "url": "/authors"
+      "url": "/guests"
     },
     {
       "name": "Privacy Policy",
