@@ -1,10 +1,10 @@
 ---
 enable: true
-title: "Ready to build your next project with Astro?"
+title: "Ready to grow your aviation business?"
 image: "/images/call-to-action.png"
-description: "Experience the future of web development with Astroplate and Astro. Build lightning-fast static sites with ease and flexibility."
+description: "Join The Aviation Business Podcast community and connect with industry leaders. Subscribe now to stay informed about the latest aviation business trends and opportunities."
 button:
   enable: true
-  label: "Get Started Now"
-  link: "https://github.com/zeon-studio/astroplate"
+  label: "Listen Now"
+  link: "https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw?si=hLNuiWmsSQqKyWrV0Iyj6g"
 ---

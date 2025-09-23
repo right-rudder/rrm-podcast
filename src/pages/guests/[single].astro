@@ -7,29 +7,29 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { slugify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
 
-// get all static paths for authors
+// get all static paths for guests
 export async function getStaticPaths() {
-  const COLLECTION_FOLDER = "authors";
-  const authors = await getSinglePage(COLLECTION_FOLDER);
+  const COLLECTION_FOLDER = "guests";
+  const guests = await getSinglePage(COLLECTION_FOLDER);
 
-  const paths = authors.map((author) => ({
+  const paths = guests.map((guest) => ({
     params: {
-      single: author.id,
+      single: guest.id,
     },
-    props: { author },
+    props: { guest },
   }));
   return paths;
 }
 
-const { author } = Astro.props;
-const { title, social, meta_title, description, image } = author.data;
-const { Content } = await render(author);
+const { guest } = Astro.props;
+const { title, social, meta_title, description, image } = guest.data;
+const { Content } = await render(guest);
 
-// get all posts by author
-const BLOG_FOLDER = "blog";
-const posts = await getSinglePage(BLOG_FOLDER);
-const postFilterByAuthor = posts.filter(
-  (post) => slugify(post.data.author) === slugify(title)
+// get all posts by guest
+const EPISODES_FOLDER = "episodes";
+const episodes = await getSinglePage(EPISODES_FOLDER);
+const postFilterByGuest = episodes.filter(
+  (episode) => slugify(episode.data.author) === slugify(title)
 );
 ---
 
@@ -67,9 +67,9 @@ const postFilterByAuthor = posts.filter(
 
       <div class="row justify-center pb-16 pt-14">
         {
-          postFilterByAuthor.map((post) => (
+          postFilterByGuest.map((episode) => (
             <div class="mb-12 md:col-6 lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={episode} />
             </div>
           ))
         }

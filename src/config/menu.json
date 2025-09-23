@@ -10,11 +10,11 @@
     },
     {
       "name": "Episodes",
-      "url": "/blog"
+      "url": "/episodes"
     },
     {
       "name": "Guests",
-      "url": "/authors"
+      "url": "/guests"
     }
   ],
   "footer": [
@@ -24,11 +24,11 @@
     },
     {
       "name": "Episodes",
-      "url": "/blog"
+      "url": "/episodes"
     },
     {
       "name": "Guests",
-      "url": "/authors"
+      "url": "/guests"
     },
     {
       "name": "Privacy Policy",

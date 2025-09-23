@@ -7,9 +7,10 @@ import { sortByDate } from "@/lib/utils/sortFunctions";
 import taxonomyFilter from "@/lib/utils/taxonomyFilter";
 import PageHeader from "@/partials/PageHeader.astro";
 
+// get static paths for all tags
 export async function getStaticPaths() {
-  const BLOG_FOLDER = "blog";
-  const tags = await getTaxonomy(BLOG_FOLDER, "tags");
+  const EPISODES_FOLDER = "episodes";
+  const tags = await getTaxonomy(EPISODES_FOLDER, "tags");
 
   return tags.map((tag) => {
     return {
@@ -20,11 +21,11 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 
-// get posts by tag
-const BLOG_FOLDER = "blog";
-const posts = await getSinglePage(BLOG_FOLDER);
-const filterByTags = taxonomyFilter(posts, "tags", tag!);
-const sortedPosts = sortByDate(filterByTags);
+// get episodes by tag
+const EPISODES_FOLDER = "episodes";
+const episodes = await getSinglePage(EPISODES_FOLDER);
+const filterByTags = taxonomyFilter(episodes, "tags", tag!);
+const sortedEpisodes = sortByDate(filterByTags);
 ---
 
 <Base title={tag}>
@@ -33,9 +34,9 @@ const sortedPosts = sortByDate(filterByTags);
     <div class="container">
       <div class="row">
         {
-          sortedPosts.map((post) => (
+          sortedEpisodes.map((episode) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={episode} />
             </div>
           ))
         }

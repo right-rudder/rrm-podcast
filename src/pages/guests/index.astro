@@ -1,28 +1,28 @@
 ---
-import AuthorCard from "@/components/AuthorCard.astro";
+import GuestCard from "@/components/GuestCard.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntry, type CollectionEntry } from "astro:content";
 
-const COLLECTION_FOLDER = "authors";
+const COLLECTION_FOLDER = "guests";
 
-const authorIndex = (await getEntry(
+const guestIndex = (await getEntry(
   COLLECTION_FOLDER,
   "-index"
-)) as CollectionEntry<"authors">;
-const authors = await getSinglePage(COLLECTION_FOLDER);
+)) as CollectionEntry<"guests">;
+const guests = await getSinglePage(COLLECTION_FOLDER);
 ---
 
-<Base title={authorIndex.data.title}>
-  <PageHeader title={authorIndex.data.title} />
+<Base title={guestIndex.data.title}>
+  <PageHeader title={guestIndex.data.title} />
   <section class="section-sm pb-0">
     <div class="container">
       <div class="row justify-center">
         {
-          authors.map((author) => (
+          guests.map((guest) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <AuthorCard data={author} />
+              <GuestCard data={guest} />
             </div>
           ))
         }

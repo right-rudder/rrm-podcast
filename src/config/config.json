@@ -19,12 +19,12 @@
     "default_theme": "system",
     "pagination": 4,
     "summary_length": 200,
-    "blog_folder": "blog"
+    "blog_folder": "episodes"
   },
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by More Right Rudder"
+    "copyright": "Designed And Developed by Right Rudder Marketing"
   },
 
   "navigation_button": {
@@ -40,13 +40,13 @@
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "aviation-business-podcast",
     "settings": {}
   },
 
   "metadata": {
-    "meta_author": "zeon.studio",
+    "meta_author": "Right Rudder Marketing",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_description": "The Aviation Business Podcast - Expert insights into aviation industry business strategies, leadership, and growth. Hosted by Right Rudder Marketing."
   }
 }

@@ -9,8 +9,8 @@ import PageHeader from "@/partials/PageHeader.astro";
 
 // get static paths for all categories
 export async function getStaticPaths() {
-  const BLOG_FOLDER = "blog";
-  const categories = await getTaxonomy(BLOG_FOLDER, "categories");
+  const EPISODES_FOLDER = "episodes";
+  const categories = await getTaxonomy(EPISODES_FOLDER, "categories");
 
   return categories.map((category) => {
     return {
@@ -21,11 +21,11 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 
-// get posts by category
-const BLOG_FOLDER = "blog";
-const posts = await getSinglePage(BLOG_FOLDER);
-const filterByCategories = taxonomyFilter(posts, "categories", category!);
-const sortedPosts = sortByDate(filterByCategories);
+// get episodes by category
+const EPISODES_FOLDER = "episodes";
+const episodes = await getSinglePage(EPISODES_FOLDER);
+const filterByCategories = taxonomyFilter(episodes, "categories", category!);
+const sortedEpisodes = sortByDate(filterByCategories);
 ---
 
 <Base title={category}>
@@ -34,9 +34,9 @@ const sortedPosts = sortByDate(filterByCategories);
     <div class="container">
       <div class="row">
         {
-          sortedPosts.map((post) => (
+          sortedEpisodes.map((episode) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={episode} />
             </div>
           ))
         }
