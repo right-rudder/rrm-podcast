@@ -1,9 +1,31 @@
 ---
-title: "Hey, I am John Doe!"
+title: "About The Aviation Business Podcast"
 meta_title: "About"
-description: "this is meta description"
+description: "Learn about The Aviation Business Podcast and Right Rudder Marketing's mission to connect aviation industry leaders and share their stories."
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Welcome to The Aviation Business Podcast, where we dive deep into the stories, strategies, and insights that drive success in the aviation industry. Hosted by the team at Right Rudder Marketing, our podcast brings together aviation leaders, entrepreneurs, and innovators to share their experiences and expertise.
+
+## Our Mission
+
+At The Aviation Business Podcast, we believe that the aviation industry thrives on the exchange of knowledge and experiences. Our mission is to create a platform where aviation professionals can learn from each other, discover new opportunities, and stay ahead of industry trends.
+
+## What We Cover
+
+Our episodes feature in-depth conversations covering:
+
+- **Leadership and Management**: Learn from aviation executives who've built successful companies and led transformative initiatives
+- **Technology and Innovation**: Explore how emerging technologies are reshaping aviation operations and customer experiences
+- **Business Strategy**: Discover the strategic decisions that drive growth in aviation companies
+- **Industry Trends**: Stay informed about market dynamics, regulatory changes, and future opportunities
+- **Career Development**: Get advice from industry veterans on building successful aviation careers
+
+## About Right Rudder Marketing
+
+Right Rudder Marketing is a specialized marketing agency focused exclusively on the aviation industry. We understand the unique challenges and opportunities that aviation businesses face, and we're passionate about helping them succeed. Through The Aviation Business Podcast, we're building a community of aviation professionals who share our commitment to excellence and innovation.
+
+## Join Our Community
+
+Whether you're an aviation executive, pilot, entrepreneur, or industry enthusiast, The Aviation Business Podcast offers valuable insights that can help you navigate the complexities of the aviation business world. Subscribe to our podcast and become part of a growing community of aviation professionals who are shaping the future of flight.

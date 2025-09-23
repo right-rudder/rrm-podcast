@@ -1,51 +1,51 @@
 ---
 # Banner
 banner:
-  title: "The Latest Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
+  title: "The Aviation Business Podcast - Where Aviation Leaders Share Their Stories"
+  content: "Join us for in-depth conversations with aviation industry leaders, entrepreneurs, and innovators. Discover the strategies, challenges, and opportunities that drive success in the aviation business world."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/astroplate"
+    label: "Listen Now"
+    link: "https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw?si=hLNuiWmsSQqKyWrV0Iyj6g"
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
+  - title: "What You'll Discover on The Aviation Business Podcast"
     image: "/images/service-1.png"
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+    content: "Our podcast brings you exclusive insights from aviation industry leaders, covering everything from airline operations to aerospace innovation. Here's what makes our show essential listening:"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Astro and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Expert interviews with aviation CEOs, pilots, and industry innovators"
+      - "In-depth analysis of aviation business trends and market dynamics"
+      - "Real-world case studies and success stories from the aviation industry"
+      - "Actionable insights for aviation professionals and business leaders"
+      - "**Weekly episodes** featuring the most influential voices in aviation"
     button:
       enable: false
-      label: "Get Started Now"
+      label: "Listen Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Astro"
+  - title: "Industry Topics That Matter Most"
     image: "/images/service-2.png"
-    content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "We cover the full spectrum of aviation business topics that are shaping the industry today. From emerging technologies to regulatory changes, our episodes keep you informed and ahead of the curve:"
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Aviation technology and digital transformation initiatives"
+      - "Sustainable aviation fuel and environmental innovations"
+      - "Airport operations, airline management, and fleet optimization"
+      - "Aviation finance, investment trends, and market analysis"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/astroplate"
+      label: "Browse Episodes"
+      link: "/episodes"
 
-  - title: "The Top Reasons to Choose Astro for Your Next Project"
+  - title: "Why Aviation Professionals Choose Our Podcast"
     image: "/images/service-3.png"
-    content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "The Aviation Business Podcast has become the go-to resource for aviation professionals seeking actionable insights and industry connections."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Astro a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Trusted by aviation executives, pilots, and industry professionals worldwide"
+      - "Expert-level content that goes beyond surface-level discussions"
+      - "Network with like-minded aviation professionals through our community"
+      - "Stay current with the latest aviation business trends and opportunities"
     button:
       enable: false
       label: ""

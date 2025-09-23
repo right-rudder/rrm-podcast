@@ -11,44 +11,46 @@ import PostSidebar from "@/partials/PostSidebar.astro";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
-const BLOG_FOLDER = "blog";
+const EPISODES_FOLDER = "episodes";
 
-const postIndex = (await getEntry(
-  BLOG_FOLDER,
+const episodesIndex = (await getEntry(
+  EPISODES_FOLDER,
   "-index"
-)) as CollectionEntry<"blog">;
-const posts = await getSinglePage(BLOG_FOLDER);
-const allCategories = await getAllTaxonomy(BLOG_FOLDER, "categories");
-const categories = await getTaxonomy(BLOG_FOLDER, "categories");
-const tags = await getTaxonomy(BLOG_FOLDER, "tags");
-const sortedPosts = sortByDate(posts);
-const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+)) as CollectionEntry<"episodes">;
+const episodes = await getSinglePage(EPISODES_FOLDER);
+const allCategories = await getAllTaxonomy(EPISODES_FOLDER, "categories");
+const categories = await getTaxonomy(EPISODES_FOLDER, "categories");
+const tags = await getTaxonomy(EPISODES_FOLDER, "tags");
+const sortedEpisodes = sortByDate(episodes);
+const totalPages: number = Math.ceil(
+  episodes.length / config.settings.pagination
+);
+const currentEpisodes = sortedEpisodes.slice(0, config.settings.pagination);
 ---
 
 <Base
-  title={postIndex.data.title}
-  meta_title={postIndex.data.meta_title}
-  image={postIndex.data.image}
-  description={postIndex.data.description}
+  title={episodesIndex.data.title}
+  meta_title={episodesIndex.data.meta_title}
+  image={episodesIndex.data.image}
+  description={episodesIndex.data.description}
 >
-  <PageHeader title={postIndex?.data.title} />
+  <PageHeader title={episodesIndex?.data.title} />
   <section class="section">
     <div class="container">
       <div class="row gx-5">
-        <!-- blog posts -->
+        <!-- episode posts -->
         <div class="lg:col-8">
           <div class="row">
             {
-              currentPosts.map((post) => (
+              currentEpisodes.map((episode) => (
                 <div class="mb-14 md:col-6">
-                  <BlogCard data={post} />
+                  <BlogCard data={episode} />
                 </div>
               ))
             }
           </div>
           <Pagination
-            section={BLOG_FOLDER}
+            section={EPISODES_FOLDER}
             currentPage={1}
             totalPages={totalPages}
           />

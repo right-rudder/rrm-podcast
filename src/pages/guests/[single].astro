@@ -26,10 +26,10 @@ const { title, social, meta_title, description, image } = guest.data;
 const { Content } = await render(guest);
 
 // get all posts by guest
-const BLOG_FOLDER = "blog";
-const posts = await getSinglePage(BLOG_FOLDER);
-const postFilterByGuest = posts.filter(
-  (post) => slugify(post.data.author) === slugify(title)
+const EPISODES_FOLDER = "episodes";
+const episodes = await getSinglePage(EPISODES_FOLDER);
+const postFilterByGuest = episodes.filter(
+  (episode) => slugify(episode.data.author) === slugify(title)
 );
 ---
 
@@ -67,9 +67,9 @@ const postFilterByGuest = posts.filter(
 
       <div class="row justify-center pb-16 pt-14">
         {
-          postFilterByGuest.map((post) => (
+          postFilterByGuest.map((episode) => (
             <div class="mb-12 md:col-6 lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={episode} />
             </div>
           ))
         }
