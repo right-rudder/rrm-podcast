@@ -8,7 +8,7 @@ season: 1
 episode: 5
 categories:
   ["Independent CFIs", "Specialty Flight Schools", "Aviation Business"]
-author: "Right Rudder Marketing"
+guest: "Adriana Barragan"
 tags:
   ["Pilot Tools", "CFI Resources", "Aviation Technology", "Specialty Training"]
 draft: false

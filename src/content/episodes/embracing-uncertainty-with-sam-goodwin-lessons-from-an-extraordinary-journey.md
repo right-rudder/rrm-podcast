@@ -7,7 +7,7 @@ image: "/images/sam-goodwin-rrm-podcast.png"
 season: 1
 episode: 4
 categories: ["Personal Development", "Leadership", "Pilot Life"]
-author: "Right Rudder Marketing"
+guest: "Sam Goodwin"
 tags:
   [
     "Uncertainty in Business",

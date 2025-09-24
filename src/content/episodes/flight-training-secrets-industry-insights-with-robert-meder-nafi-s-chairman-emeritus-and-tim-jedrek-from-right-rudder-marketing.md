@@ -7,7 +7,7 @@ image: "/images/March 2024 Clear Prop Webinar.png"
 season: 1
 episode: 1
 categories: ["Flight Training", "Aviation Safety", "Flight Schools"]
-author: "Right Rudder Marketing"
+guest: "Robert Meder"
 tags:
   [
     "Flight Training",
@@ -22,11 +22,11 @@ draft: false
 
 In this episode of the Right Rudder Marketing Podcast, we dive deep into the flight training industry with Robert Meder, Chairman Emeritus of the National Association of Flight Instructors (NAFI), and host Tim Jedrek. Together, they discuss the culture of safety, the role of leadership in flight schools, and the future of aviation.
 
-**Video Replay**
+## Video Replay
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/RGkuVhuhjCw?si=qdurInxIq-2gxe_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Key Takeaways from the Podcast
+### Key Takeaways from the Podcast
 
 - **The Importance of Safety Culture**:
   - Robert emphasizes the moral responsibility of instructors and flight schools to prioritize safety above all else.

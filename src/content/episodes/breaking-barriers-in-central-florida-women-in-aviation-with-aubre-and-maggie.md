@@ -7,7 +7,7 @@ image: "/images/The-Aviation-Business-Podcast-S1E18.png"
 season: 1
 episode: 18
 categories: ["Aviation Diversity"]
-author: "Right Rudder Marketing"
+guest: "WAI Central Florida"
 tags:
   [
     "Women in Aviation",

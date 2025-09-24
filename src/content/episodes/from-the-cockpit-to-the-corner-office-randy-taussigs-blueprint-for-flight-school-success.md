@@ -7,7 +7,7 @@ image: "/images/Randy - Taussig - The Aviation Business Podcast.png"
 season: 1
 episode: 20
 categories: ["Flight Training", "Aviation Safety", "Flight Schools"]
-author: "Right Rudder Marketing"
+guest: "Randy Taussig"
 tags:
   [
     "Flight Training",

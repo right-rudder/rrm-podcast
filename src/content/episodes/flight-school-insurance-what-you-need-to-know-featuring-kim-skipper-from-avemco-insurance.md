@@ -7,7 +7,7 @@ image: "/images/The-Aviation-Business-Podcast-S1E17.png"
 season: 1
 episode: 17
 categories: ["Aviation Insurance", "Flight Schools", "Risk Management"]
-author: "Right Rudder Marketing"
+guest: "Kim Skipper"
 tags:
   [
     "Flight School Insurance",

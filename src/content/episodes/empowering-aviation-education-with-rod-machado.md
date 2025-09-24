@@ -7,7 +7,7 @@ image: "/images/Rob-Machado-podcast.png"
 season: 1
 episode: 10
 categories: ["Aviation Education", "Flight Training", "Flight Schools"]
-author: "Right Rudder Marketing"
+guest: "Rod Machado"
 tags:
   [
     "Flight Instruction",

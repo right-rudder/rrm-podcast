@@ -2,9 +2,26 @@
 import { humanize } from "@/lib/utils/textConverter";
 
 const { tags, categories, allCategories } = Astro.props;
+
+// sliced most used categories
+categories.sort((a: string, b: string) => {
+  const countA = allCategories.filter((c: string) => c === a).length;
+  const countB = allCategories.filter((c: string) => c === b).length;
+  return countB - countA;
+});
+categories.splice(6);
+
+// sliced most used tags and sort alphabetically
+tags.sort((a: string, b: string) => {
+  const countA = allCategories.filter((c: string) => c === a).length;
+  const countB = allCategories.filter((c: string) => c === b).length;
+  return countB - countA;
+});
+tags.splice(12);
+tags.sort();
 ---
 
-<div class="lg:col-4">
+<div class="lg:col-3">
   <!-- categories -->
   <div class="mb-8">
     <h5 class="mb-6">Categories</h5>
@@ -18,7 +35,7 @@ const { tags, categories, allCategories } = Astro.props;
             return (
               <li>
                 <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
+                  class="flex justify-between text-sm capitalize hover:text-primary dark:hover:text-darkmode-primary"
                   href={`/categories/${category}`}
                 >
                   {humanize(category)} <span>({count})</span>
@@ -34,13 +51,13 @@ const { tags, categories, allCategories } = Astro.props;
   <div class="mb-8">
     <h5 class="mb-6">Tags</h5>
     <div class="rounded bg-light p-6 dark:bg-darkmode-light">
-      <ul>
+      <ul class="flex flex-wrap">
         {
           tags.map((tag: any) => {
             return (
-              <li class="inline-block">
+              <li class="w-full">
                 <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-text-dark"
+                  class="m-1 block rounded text-sm capitalize bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-text-dark"
                   href={`/tags/${tag}`}
                 >
                   {humanize(tag)}

@@ -7,7 +7,7 @@ image: "/images/Brandon Williams - The Aviation Business Podcast.png"
 season: 1
 episode: 21
 categories: ["Flight Training", "Aviation Safety", "Flight Schools"]
-author: "Right Rudder Marketing"
+guest: "Brandon Williams"
 tags:
   [
     "Flight Training",

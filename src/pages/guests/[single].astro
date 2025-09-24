@@ -29,7 +29,7 @@ const { Content } = await render(guest);
 const EPISODES_FOLDER = "episodes";
 const episodes = await getSinglePage(EPISODES_FOLDER);
 const postFilterByGuest = episodes.filter(
-  (episode) => slugify(episode.data.author) === slugify(title)
+  (episode) => slugify(episode.data.guest) === slugify(title)
 );
 ---
 
