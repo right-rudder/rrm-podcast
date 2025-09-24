@@ -19,11 +19,11 @@ const { title, description, meta_title, image } = about.data;
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
-        <div class="text-center md:col-10 lg:col-7">
+        <div class="text-left md:col-10 lg:col-7">
           {
             image && (
               <ImageMod
-                class="mx-auto mb-6 rounded-lg"
+                class="mx-auto mb-6 rounded-none"
                 src={image}
                 width={200}
                 height={200}
@@ -32,8 +32,8 @@ const { title, description, meta_title, image } = about.data;
               />
             )
           }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-          <div class="content">
+          <h2 set:html={markdownify(title)} class="h3 mt-6 text-center mb-6" />
+          <div class="content mt-12">
             <Content />
           </div>
         </div>
