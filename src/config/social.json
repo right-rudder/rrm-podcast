@@ -1,24 +1,34 @@
 {
   "main": [
     {
+      "name": "spotify",
+      "icon": "FaSpotify",
+      "link": "https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw?si=hLNuiWmsSQqKyWrV0Iyj6g"
+    },
+    {
+      "name": "youtube",
+      "icon": "FaYoutube",
+      "link": "https://www.youtube.com/playlist?list=PLVkKix8mCxfOd8I6Wkff9DZz3WEIJKMPW"
+    },
+    {
       "name": "facebook",
       "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/rightruddermktg"
     },
     {
       "name": "twitter",
       "icon": "FaTwitter",
-      "link": "https://twitter.com/"
+      "link": "https://twitter.com/rightruddermktg"
     },
     {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
+      "name": "instagram",
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/rightruddermarketing/"
     },
     {
       "name": "linkedin",
       "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "http://linkedin.com/company/rightruddermarketing"
     }
   ]
 }
