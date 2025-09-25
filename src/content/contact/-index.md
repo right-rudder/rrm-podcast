@@ -1,7 +1,7 @@
 ---
 title: "Contact The Aviation Business Podcast"
-meta_title: "Contact"
-description: "Get in touch with The Aviation Business Podcast team. Guest inquiries, partnership opportunities, and feedback welcome."
+meta_title: "Contact The Aviation Business Podcast - Guest Inquiries & Aviation Industry Partnerships"
+description: "Contact The Aviation Business Podcast for guest opportunities, aviation industry partnerships, flight school marketing inquiries, and podcast collaboration. Connect with Right Rudder Marketing's aviation business consultants and industry experts."
 draft: false
 ---
 

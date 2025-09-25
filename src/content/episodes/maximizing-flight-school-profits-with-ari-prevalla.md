@@ -1,7 +1,7 @@
 ---
 title: "Maximizing Flight School Profits with Ari Prevalla"
-meta_title: ""
-description: "In this episode, Tim Jedrek sits down with Ari Prevalla, owner of Flight Schools for Sale and aviation consultant, to discuss strategies for maximizing profits, building scalable operations, and selling flight schools."
+meta_title: "Maximizing Flight School Profits - Aviation Business Strategies with Ari Prevalla"
+description: "Learn flight school profitability strategies with Ari Prevalla from Flight Schools for Sale. Discover how to maximize flight training business profits, build scalable operations, and prepare for flight school sale. Expert aviation business consulting insights."
 date: 2024-09-19T05:00:00Z
 image: "/images/Flight-School-4-Sale-podcast.png"
 season: 1

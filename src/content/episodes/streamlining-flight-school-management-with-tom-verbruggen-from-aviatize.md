@@ -20,6 +20,10 @@ tags:
     "Aviation Technology",
     "Flight School Efficiency",
     "Aviation Industry Insights",
+    "Flight School Operations",
+    "Aviation Business Development",
+    "Flight Training Management Software",
+    "Student Retention Strategies",
   ]
 draft: false
 ---

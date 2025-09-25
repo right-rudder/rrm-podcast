@@ -1,7 +1,7 @@
 ---
 title: "How Gordon Scaled his Flight School From One Leased Plane to 70+ Aircraft and Four Locations"
-meta_title: ""
-description: "Gordon Alvord took Rainier Flight Service from a single leased aircraft to a multi-location flight school with over 70 planes. In this episode, he shares the real challenges and growing pains of scaling operations."
+meta_title: "How to Scale a Flight School Business - Growth Strategies with Gordon Alvord"
+description: "Learn how Gordon Alvord scaled Rainier Flight Service from one leased aircraft to 70+ planes and four locations. Discover flight school growth strategies, multi-location expansion tactics, aircraft fleet management, and overcoming operational challenges in flight training business growth."
 date: 2025-03-22T05:00:00Z
 image: "/images/Right-Rudder-Marketing-Rainier-podcast.png"
 season: 1

@@ -3,7 +3,7 @@
 banner:
   title: "The Aviation Business Podcast"
   subtitle: "Where Aviation Leaders Share Their Stories"
-  content: "Join us for in depth conversations with **aviation industry leaders**, **entrepreneurs**, and **innovators**. Discover the strategies, challenges, and **opportunities** that drive success in the aviation **business** world."
+  content: "Join us for in depth conversations with **flight school owners**, **aviation industry leaders**, and **pilot training experts**. Discover **flight school management strategies**, business development tactics, and **opportunities** that drive success in aviation **business** and **flight training** operations."
   image: ""
   button:
     enable: true
@@ -14,13 +14,13 @@ banner:
 features:
   - title: "What You'll Discover on The Aviation Business Podcast"
     image: "/images/The Aviation Business Podcast.png"
-    content: "Our podcast brings you exclusive **insights** from aviation industry leaders, covering everything from **airline operations** to **aerospace innovation**. Here's what makes our show **essential** listening:"
+    content: "Our podcast brings you exclusive **insights** from flight school owners and aviation business leaders, covering everything from **flight training operations** to **aviation business development**. Here's what makes our show **essential** listening for **flight school management**:"
     bulletpoints:
-      - "**Expert interviews** with aviation CEOs, pilots, and industry innovators"
-      - "**In-depth analysis** of aviation business trends and market dynamics"
-      - "**Real-world case studies** and success stories from the aviation industry"
-      - "**Actionable insights** for aviation professionals and business leaders"
-      - "**Weekly episodes** featuring the most influential voices in aviation"
+      - "**Expert interviews** with flight school owners, CFIs, and aviation business leaders"
+      - "**In-depth analysis** of flight training business trends and growth strategies"
+      - "**Real-world case studies** from successful flight school operations"
+      - "**Actionable insights** for flight school management and pilot training programs"
+      - "**Weekly episodes** featuring flight training industry experts and innovators"
     button:
       enable: false
       label: "Listen Now"

@@ -1,7 +1,7 @@
 ---
 title: "Pilot Career Outlook 2025: Preparing Your Students for the Aviation Job Boom"
-meta_title: ""
-description: "Learn about the 2025 pilot job boom with Captain Kit Darby on the Right Rudder Podcast, April 24. Discover hiring trends across major airlines, regionals, and corporate aviation to prepare your flight students for 5,000+ new pilot positions. Essential industry insights for flight schools and CFIs."
+meta_title: "2025 Pilot Career Outlook - Aviation Job Market Trends with Captain Kit Darby"
+description: "Discover the 2025 pilot career outlook with Captain Kit Darby. Learn about airline pilot hiring trends, aviation job market forecast, pilot career development strategies, and how flight schools can prepare students for 5,000+ new pilot positions in commercial aviation, regional airlines, and corporate flying."
 date: 2025-04-15T05:00:00Z
 image: "/images/Right-Rudder-Marketing-Podcast-Kit-Darby.png"
 season: 1

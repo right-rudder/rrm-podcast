@@ -1,7 +1,7 @@
 ---
 title: "Learn How to Provide Financing to Your Student Pilots with Stratus Financial"
-meta_title: ""
-description: "Right Rudder Marketing is thrilled to bring you an exciting podcast episode featuring Brandon Martini from Stratus Financial. In this episode, Tim and Brandon will dive into how flight schools can offer flexible financing options, making flight training more accessible to students and driving enrollment growth."
+meta_title: "Student Pilot Financing Solutions - Flight Training Loans with Stratus Financial"
+description: "Discover how flight schools can offer student pilot financing with Stratus Financial's Brandon Martini. Learn about flight training loans, pilot financing programs, student financial aid options, and strategies to increase flight school enrollment through accessible financing solutions."
 date: 2025-02-13T05:00:00Z
 image: "/images/stratus-podcast-tim-jedrek-brandon-martini.png"
 season: 1

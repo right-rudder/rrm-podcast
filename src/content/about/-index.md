@@ -1,7 +1,7 @@
 ---
 title: "About The Aviation Business Podcast"
-meta_title: "About The Aviation Business Podcast"
-description: "Learn about The Aviation Business Podcast and Right Rudder Marketing's mission to connect aviation industry leaders and share their stories."
+meta_title: "About The Aviation Business Podcast - Flight School Management & Aviation Industry Insights"
+description: "Learn about The Aviation Business Podcast featuring flight school management strategies, pilot training insights, aviation business development, and industry expert interviews. Hosted by Right Rudder Marketing's aviation consultants and industry professionals."
 image: "/images/AviationBusinessPodcast Logo.png"
 draft: false
 ---

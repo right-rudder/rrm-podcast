@@ -1,7 +1,7 @@
 ---
 title: "Transforming Flight School Operations with Brett Hart from Four Forces"
-meta_title: ""
-description: "In this episode, Tim Jedrek talks with Brett Hart, co-founder and CEO of Four Forces, about improving flight school operations through innovative software, reducing costs, and enhancing student and staff experiences."
+meta_title: "Flight School Operations Management Software - Four Forces with Brett Hart"
+description: "Discover how to transform flight school operations with Brett Hart, CEO of Four Forces. Learn about flight training management software, reducing operational costs, improving student retention, and enhancing flight school efficiency through innovative technology solutions."
 date: 2024-10-03T05:00:00Z
 image: "/images/four-forces-podcast.png"
 season: 1

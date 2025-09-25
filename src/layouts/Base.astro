@@ -151,6 +151,31 @@ const canonicalUrl = canonical || getAutoCanonical(Astro.url);
       content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
     />
 
+    <!-- podcast-specific og tags -->
+    <meta property="og:site_name" content={config.site.title} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content={config.metadata.meta_author} />
+    <meta property="article:publisher" content={config.metadata.meta_author} />
+
+    <!-- podcast platform links -->
+    <meta
+      property="podcast:spotify"
+      content="https://open.spotify.com/show/6HqS2ljQR33xof9Xnel9Aw"
+    />
+    <meta
+      property="podcast:apple"
+      content="https://podcasts.apple.com/us/podcast/the-aviation-business-podcast"
+    />
+
+    <!-- additional og tags for better social sharing -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:alt"
+      content={`${config.site.title} - ${config.metadata.meta_description}`}
+    />
+
     <!-- twitter-title -->
     <meta
       name="twitter:title"
@@ -183,6 +208,30 @@ const canonicalUrl = canonical || getAutoCanonical(Astro.url);
       }`}
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rightruddermarketing" />
+    <meta name="twitter:creator" content="@rightruddermarketing" />
+
+    <!-- podcast-specific meta tags -->
+    <meta name="podcast:author" content={config.metadata.meta_author} />
+    <meta name="podcast:category" content="Business,Aviation,Technology" />
+    <meta name="podcast:language" content="en" />
+    <meta name="podcast:format" content="episodic" />
+
+    <!-- RSS feed discovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${config.site.title} RSS Feed`}
+      href={`${config.site.base_url}/rss.xml`}
+    />
+
+    <!-- podcast platform discovery -->
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href={`${config.site.base_url}/oembed.json`}
+      title={config.site.title}
+    />
   </head>
   <body>
     {/* google tag manager noscript */}
