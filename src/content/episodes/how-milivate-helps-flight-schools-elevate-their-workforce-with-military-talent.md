@@ -7,7 +7,7 @@ image: "/images/Milivate-Webinar.png"
 season: 1
 episode: 3
 categories: ["Flight Training", "Aviation Business", "Flight Schools"]
-guest: "Justin Dal Colletto, Andrew Roper"
+guest: "Milivate"
 tags:
   [
     "military talent",

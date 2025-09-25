@@ -1,16 +1,20 @@
 ---
 title: Tim Jedrek
 email: tim@rightruddermarketing.com
-image: "/images/avatar.png"
+image: "/images/TimJedrek.jpg"
 description: Aviation business consultant and co-host of The Aviation Business Podcast, specializing in flight training business development and aviation industry analysis.
 social:
   - name: linkedin
     icon: FaLinkedin
-    link: https://linkedin.com/in/tim-jedrek
+    link: https://www.linkedin.com/in/timjedrek
 
   - name: twitter
     icon: FaTwitter
     link: https://twitter.com/timjedrek
+
+  - name: website
+    icon: FaGlobe
+    link: https://timjedrek.com
 ---
 
 Tim Jedrek is a seasoned aviation business consultant and co-host of The Aviation Business Podcast. With a background in both aviation operations and business development, Tim brings a unique perspective to the challenges and opportunities facing aviation companies today.

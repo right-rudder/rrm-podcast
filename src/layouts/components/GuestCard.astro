@@ -7,24 +7,31 @@ const { data } = Astro.props;
 const { title, image, social } = data.data;
 ---
 
-<div class="rounded bg-light p-8 text-center dark:bg-darkmode-light">
+<div class="rounded min-h-64 bg-light p-8 text-center dark:bg-darkmode-light">
   {
     image && (
-      <ImageMod
-        class="mx-auto mb-6 rounded"
-        src={image}
-        alt={title}
-        width={120}
-        height={120}
-        format="webp"
-      />
+      <a href={`/guests/${data.id}`} aria-label={title}>
+        <div class="w-30 h-30 mb-6 mx-auto overflow-hidden rounded bg-white dark:bg-gray-700">
+          <ImageMod
+            class="object-contain w-full h-full"
+            src={image}
+            alt={title}
+            width={120}
+            height={120}
+            format="webp"
+          />
+        </div>
+      </a>
     )
   }
   <h4 class="mb-3">
     <a href={`/guests/${data.id}`}>{title}</a>
   </h4>
   <p class="mb-4">
-    {plainify(data.body?.slice(0, 100))}
+    {
+      plainify(data.body?.slice(0, 150)) +
+        (data.body && data.body.length > 150 ? "..." : "")
+    }
   </p>
   <Social source={social} className="social-icons" />
 </div>

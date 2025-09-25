@@ -11,7 +11,10 @@ const guestIndex = (await getEntry(
   COLLECTION_FOLDER,
   "-index"
 )) as CollectionEntry<"guests">;
+
+// Alphabetical order by guest name
 const guests = await getSinglePage(COLLECTION_FOLDER);
+guests.sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <Base title={guestIndex.data.title}>
