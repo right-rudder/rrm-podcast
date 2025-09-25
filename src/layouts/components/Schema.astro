@@ -1,0 +1,21 @@
+---
+interface Props {
+  schema: object | object[];
+}
+
+const { schema } = Astro.props;
+
+// Handle both single schema and array of schemas
+const schemaArray = Array.isArray(schema) ? schema : [schema];
+const validSchemas = schemaArray.filter(Boolean); // Remove any null/undefined values
+---
+
+{
+  validSchemas.map((schemaItem) => (
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(schemaItem, null, 0)}
+    />
+  ))
+}

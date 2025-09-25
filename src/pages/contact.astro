@@ -1,6 +1,12 @@
 ---
 import config from "@/config/config.json";
+import Schema from "@/layouts/components/Schema.astro";
 import Base from "@/layouts/Base.astro";
+import {
+  getWebPageSchema,
+  getBreadcrumbSchema,
+  combineSchemas,
+} from "@/lib/schema";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -11,6 +17,21 @@ const contact = (await getEntry(
 )) as CollectionEntry<"contact">;
 const { contact_form_action }: { contact_form_action: string } = config.params;
 const { title, description, meta_title, image } = contact.data;
+
+// Generate schemas
+const webPageSchema = getWebPageSchema({
+  title,
+  description,
+  url: `${config.site.base_url}/contact`,
+});
+
+const breadcrumbs = [
+  { name: "Home", url: config.site.base_url },
+  { name: "Contact", url: `${config.site.base_url}/contact` },
+];
+const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
+
+const schemas = combineSchemas([webPageSchema, breadcrumbSchema]);
 ---
 
 <Base
@@ -19,6 +40,8 @@ const { title, description, meta_title, image } = contact.data;
   description={description}
   image={image}
 >
+  <Schema schema={schemas} />
+  >
   <PageHeader title={title} />
   <section class="section-sm">
     <div class="container">

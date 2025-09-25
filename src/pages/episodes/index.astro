@@ -1,11 +1,17 @@
 ---
 import BlogCard from "@/components/BlogCard.astro";
 import Pagination from "@/components/Pagination.astro";
+import Schema from "@/layouts/components/Schema.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import {
+  getCollectionPageSchema,
+  getBreadcrumbSchema,
+  combineSchemas,
+} from "@/lib/schema";
 import PageHeader from "@/partials/PageHeader.astro";
 import PostSidebar from "@/partials/PostSidebar.astro";
 import type { CollectionEntry } from "astro:content";
@@ -26,14 +32,32 @@ const totalPages: number = Math.ceil(
   episodes.length / config.settings.pagination
 );
 const currentEpisodes = sortedEpisodes.slice(0, config.settings.pagination);
+
+// Generate schemas
+const collectionSchema = getCollectionPageSchema({
+  title: "Episodes",
+  description: "All episodes of The Aviation Business Podcast",
+  url: `${config.site.base_url}/episodes`,
+  items: sortedEpisodes,
+  itemType: "episodes",
+});
+
+const breadcrumbs = [
+  { name: "Home", url: config.site.base_url },
+  { name: "Episodes", url: `${config.site.base_url}/episodes` },
+];
+const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
+
+const schemas = combineSchemas([collectionSchema, breadcrumbSchema]);
 ---
 
-<Base
+<Base>
+  <Schema schema={schemas} />
   title={episodesIndex.data.title}
   meta_title={episodesIndex.data.meta_title}
   image={episodesIndex.data.image}
   description={episodesIndex.data.description}
->
+  >
   <PageHeader title={episodesIndex?.data.title} />
   <section class="section">
     <div class="container">

@@ -1,13 +1,42 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
+import Schema from "@/layouts/components/Schema.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import {
+  getOrganizationSchema,
+  getBreadcrumbSchema,
+  getWebPageSchema,
+  combineSchemas,
+} from "@/lib/schema";
+import config from "@/config/config.json";
 import type { CollectionEntry } from "astro:content";
 import { getEntry, render } from "astro:content";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 const { Content } = await render(about);
 const { title, description, meta_title, image } = about.data;
+
+// Generate schemas
+const organizationSchema = getOrganizationSchema();
+
+const webPageSchema = getWebPageSchema({
+  title,
+  description,
+  url: `${config.site.base_url}/about`,
+});
+
+const breadcrumbs = [
+  { name: "Home", url: config.site.base_url },
+  { name: "About", url: `${config.site.base_url}/about` },
+];
+const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
+
+const schemas = combineSchemas([
+  organizationSchema,
+  webPageSchema,
+  breadcrumbSchema,
+]);
 ---
 
 <Base
@@ -16,6 +45,7 @@ const { title, description, meta_title, image } = about.data;
   description={description}
   image={image}
 >
+  <Schema schema={schemas} />
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">

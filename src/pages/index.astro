@@ -1,7 +1,14 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
+import Schema from "@/layouts/components/Schema.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import {
+  getPodcastSeriesSchema,
+  getWebsiteSchema,
+  combineSchemas,
+} from "@/lib/schema";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { Button, Feature } from "@/types";
@@ -35,10 +42,28 @@ const call_to_action = (await getEntry(
   "call-to-action"
 )) as CollectionEntry<"ctaSection">;
 
+// Get recent episodes for schema
+const EPISODES_FOLDER = "episodes";
+const recentEpisodes = await getSinglePage(EPISODES_FOLDER);
+const latestEpisodes = recentEpisodes
+  .filter((episode) => !episode.data.draft)
+  .sort(
+    (a, b) =>
+      new Date(b.data.date || 0).getTime() -
+      new Date(a.data.date || 0).getTime()
+  )
+  .slice(0, 10);
+
+// Generate schemas
+const websiteSchema = getWebsiteSchema();
+const podcastSeriesSchema = getPodcastSeriesSchema(latestEpisodes);
+const schemas = combineSchemas([websiteSchema, podcastSeriesSchema]);
+
 const { banner, features } = homepage.data as Homepage;
 ---
 
 <Base>
+  <Schema schema={schemas} />
   <!-- Banner -->
   <section class="section pt-14">
     <div class="container">

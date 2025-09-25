@@ -1,7 +1,14 @@
 ---
 import GuestCard from "@/components/GuestCard.astro";
+import Schema from "@/layouts/components/Schema.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import {
+  getCollectionPageSchema,
+  getBreadcrumbSchema,
+  combineSchemas,
+} from "@/lib/schema";
+import config from "@/config/config.json";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntry, type CollectionEntry } from "astro:content";
 
@@ -15,9 +22,27 @@ const guestIndex = (await getEntry(
 // Alphabetical order by guest name
 const guests = await getSinglePage(COLLECTION_FOLDER);
 guests.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Generate schemas
+const collectionSchema = getCollectionPageSchema({
+  title: "Guests",
+  description: "Meet our podcast guests",
+  url: `${config.site.base_url}/guests`,
+  items: guests,
+  itemType: "guests",
+});
+
+const breadcrumbs = [
+  { name: "Home", url: config.site.base_url },
+  { name: "Guests", url: `${config.site.base_url}/guests` },
+];
+const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
+
+const schemas = combineSchemas([collectionSchema, breadcrumbSchema]);
 ---
 
 <Base title={guestIndex.data.title}>
+  <Schema schema={schemas} />
   <PageHeader title={guestIndex.data.title} />
   <section class="section-sm pb-0">
     <div class="container">

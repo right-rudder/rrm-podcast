@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "The Aviation Business Podcast",
-    "base_url": "https://rrm-podcast.netlify.app",
+    "base_url": "https://theaviationbusinesspodcast.com/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/The-Aviation-Business-Podcasts-Favicon.png",
