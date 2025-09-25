@@ -2,15 +2,19 @@
 import Base from "@/layouts/Base.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
+import { getPageCanonical } from "@/lib/canonical";
 import PageHeader from "@/partials/PageHeader.astro";
 
 const EPISODES_FOLDER = "episodes";
 
 const categories = await getTaxonomy(EPISODES_FOLDER, "categories");
 const allCategories = await getAllTaxonomy(EPISODES_FOLDER, "categories");
+
+// Generate canonical URL for categories index page
+const canonical = getPageCanonical("categories");
 ---
 
-<Base title={"Categories"}>
+<Base title={"Categories"} canonical={canonical}>
   <PageHeader title={"Categories"} />
   <section class="section">
     <div class="container text-center">

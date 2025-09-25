@@ -6,6 +6,7 @@ import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import { getPaginatedCanonical } from "@/lib/canonical";
 import PageHeader from "@/partials/PageHeader.astro";
 import PostSidebar from "@/partials/PostSidebar.astro";
 import type { CollectionEntry } from "astro:content";
@@ -32,6 +33,10 @@ const currentEpisodes = sortedEpisodes.slice(
   indexOfLastEpisode
 );
 
+// Generate canonical URL for paginated episodes
+// Page 1 canonical points to /episodes, other pages to /episodes/page/N
+const canonical = getPaginatedCanonical("episodes", currentPage);
+
 export async function getStaticPaths() {
   const EPISODES_FOLDER = "episodes";
   const episodes = await getSinglePage(EPISODES_FOLDER);
@@ -54,6 +59,7 @@ export async function getStaticPaths() {
   meta_title={episodesIndex.data.meta_title}
   image={episodesIndex.data.image}
   description={episodesIndex.data.description}
+  canonical={canonical}
 >
   <PageHeader title={episodesIndex.data.title} />
   <section class="section">

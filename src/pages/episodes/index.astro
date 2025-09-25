@@ -12,6 +12,7 @@ import {
   getBreadcrumbSchema,
   combineSchemas,
 } from "@/lib/schema";
+import { getPageCanonical } from "@/lib/canonical";
 import PageHeader from "@/partials/PageHeader.astro";
 import PostSidebar from "@/partials/PostSidebar.astro";
 import type { CollectionEntry } from "astro:content";
@@ -33,6 +34,9 @@ const totalPages: number = Math.ceil(
 );
 const currentEpisodes = sortedEpisodes.slice(0, config.settings.pagination);
 
+// Generate canonical URL for episodes index page
+const canonical = getPageCanonical("episodes");
+
 // Generate schemas
 const collectionSchema = getCollectionPageSchema({
   title: "Episodes",
@@ -51,13 +55,14 @@ const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
 const schemas = combineSchemas([collectionSchema, breadcrumbSchema]);
 ---
 
-<Base>
-  <Schema schema={schemas} />
+<Base
   title={episodesIndex.data.title}
   meta_title={episodesIndex.data.meta_title}
   image={episodesIndex.data.image}
   description={episodesIndex.data.description}
-  >
+  canonical={canonical}
+>
+  <Schema schema={schemas} />
   <PageHeader title={episodesIndex?.data.title} />
   <section class="section">
     <div class="container">

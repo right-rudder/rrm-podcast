@@ -8,6 +8,7 @@ import {
   getBreadcrumbSchema,
   combineSchemas,
 } from "@/lib/schema";
+import { getPageCanonical } from "@/lib/canonical";
 import config from "@/config/config.json";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntry, type CollectionEntry } from "astro:content";
@@ -22,6 +23,9 @@ const guestIndex = (await getEntry(
 // Alphabetical order by guest name
 const guests = await getSinglePage(COLLECTION_FOLDER);
 guests.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Generate canonical URL for guests index page
+const canonical = getPageCanonical("guests");
 
 // Generate schemas
 const collectionSchema = getCollectionPageSchema({
@@ -41,7 +45,7 @@ const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
 const schemas = combineSchemas([collectionSchema, breadcrumbSchema]);
 ---
 
-<Base title={guestIndex.data.title}>
+<Base title={guestIndex.data.title} canonical={canonical}>
   <Schema schema={schemas} />
   <PageHeader title={guestIndex.data.title} />
   <section class="section-sm pb-0">

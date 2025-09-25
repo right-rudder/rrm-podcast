@@ -5,6 +5,7 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import taxonomyFilter from "@/lib/utils/taxonomyFilter";
+import { getCategoryCanonical } from "@/lib/canonical";
 import PageHeader from "@/partials/PageHeader.astro";
 
 // get static paths for all categories
@@ -21,6 +22,9 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 
+// Generate canonical URL for this category
+const canonical = getCategoryCanonical(category!);
+
 // get episodes by category
 const EPISODES_FOLDER = "episodes";
 const episodes = await getSinglePage(EPISODES_FOLDER);
@@ -28,7 +32,7 @@ const filterByCategories = taxonomyFilter(episodes, "categories", category!);
 const sortedEpisodes = sortByDate(filterByCategories);
 ---
 
-<Base title={category}>
+<Base title={category} canonical={canonical}>
   <PageHeader title={category} />
   <div class="section-sm pb-0">
     <div class="container">

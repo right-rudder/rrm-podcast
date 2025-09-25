@@ -8,6 +8,7 @@ import {
   getBreadcrumbSchema,
   combineSchemas,
 } from "@/lib/schema";
+import { getEpisodeCanonical } from "@/lib/canonical";
 import config from "@/config/config.json";
 
 export async function getStaticPaths() {
@@ -25,6 +26,9 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { title, meta_title, description, image } = post.data;
+
+// Generate canonical URL for this episode
+const canonical = getEpisodeCanonical(post.id);
 
 // Generate episode schema
 const episodeSchema = getPodcastEpisodeSchema(post);
@@ -45,6 +49,7 @@ const schemas = combineSchemas([episodeSchema, breadcrumbSchema]);
   meta_title={meta_title}
   description={description}
   image={image}
+  canonical={canonical}
 >
   <Schema schema={schemas} />
   <PostSingle post={post} />

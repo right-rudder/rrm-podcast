@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   combineSchemas,
 } from "@/lib/schema";
+import { getPageCanonical } from "@/lib/canonical";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -17,6 +18,9 @@ const contact = (await getEntry(
 )) as CollectionEntry<"contact">;
 const { contact_form_action }: { contact_form_action: string } = config.params;
 const { title, description, meta_title, image } = contact.data;
+
+// Generate canonical URL for contact page
+const canonical = getPageCanonical("contact");
 
 // Generate schemas
 const webPageSchema = getWebPageSchema({
@@ -39,6 +43,7 @@ const schemas = combineSchemas([webPageSchema, breadcrumbSchema]);
   meta_title={meta_title}
   description={description}
   image={image}
+  canonical={canonical}
 >
   <Schema schema={schemas} />
   >
