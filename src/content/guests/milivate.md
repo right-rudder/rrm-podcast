@@ -180,3 +180,5 @@ Flight schools and aviation companies interested in partnering with Milivate can
 - **Continuous Improvement**: Data-driven approach to program enhancement and optimization
 
 Milivate represents a transformative approach to military talent integration in the aviation industry. By combining deep SkillBridge expertise with advanced technology solutions, the company has created a sustainable platform that benefits both transitioning service members and aviation employers. Their work continues to set industry standards for military transition programs while contributing to the overall strength and capability of the American aviation workforce.
+
+
